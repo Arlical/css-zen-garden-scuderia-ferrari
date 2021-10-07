@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+}
+
+.intro header {
+    background-image: url(../image/ferrari_top.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 16em;
+    border-bottom: 3px solid #D40000;
+    -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0,0.5);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0,0.5);
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+header h1, h2 {
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+section div {
+    padding: 10px 3em;
+}
+
+.summary {
+    background-color: #D40000;
+    color: white;
+    margin-top: 4em;
+}
+
+.summary p a {
+    color: white;
+}
+
+.preamble {
+    margin-top: 2em;
+	color: #222;
+}
+
+h3 {
+    text-align: end;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D40000;
+    width: max-content;
+}
+
+.explanation h3, .requirements h3 {
+    border-bottom: 1px solid #D40000;
+}
+
+.participation h3, .benefits h3 {
+    border-bottom: 1px solid #D40000;
+}
+
+#zen-supporting {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main p {
+  line-height: 1.5em;
+}
+
+.main, .participation a, .requirements a {
+    color: white;
+}
+
+.explanation {
+	background-color: #303030;
+}
+
+.participation {
+    background: linear-gradient(to bottom, rgba(79,76,76,0) 50%,rgba(79,76,76,1) 100%),
+    linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(79,76,76,0.35) 0%,rgba(79,76,76,0.35) 100%),
+    url(../image/ferrari_participation.jpg) -5em center no-repeat;
+}
+
+.benefits {
+    background: linear-gradient(to bottom, rgba(79,76,76,0) 50%,rgba(79,76,76,1) 100%),
+    linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(79,76,76,0.35) 0%,rgba(79,76,76,0.35) 100%),
+    url(../image/ferrari_benefits.jpg) -11em center no-repeat;
+}
+
+.requirements {
+	background-color: #303030;
+}
+
+footer {
+    margin-top: 2em;
+    background-color: #303030;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    padding: 20px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.zen-validate-html, .zen-validate-css {
+  color: #009a4e;
+}
+
+.zen-license {
+  color: #FFFFFF;
+}
+
+.zen-accessibility, .zen-github {
+  color: #ed1c24;
+}
+
+.zen-validate-html:hover, .zen-validate-css:hover {
+    border-bottom: 5px solid #009a4e;
+    background-color: rgba(0, 154, 78, 0.20);
+    padding: 20px 30px 15px 30px;
+}
+
+.zen-license:hover {
+    border-bottom: 5px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 20px 30px 15px 30px;
+}
+
+.zen-accessibility:hover, .zen-github:hover {
+    border-bottom: 5px solid #ed1c24;
+    background-color: rgba(237, 28, 36, 0.20);
+    padding: 20px 30px 15px 30px;
+}
+
+.sidebar {
+    margin-top: 2em;
+    background-color: #181818;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 3px solid #D40000;
+    -moz-box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+    box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+    color: #FFFFFF;
+}
+
+.wrapper a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+#design-selection {
+    padding: 10px 3em;
+}
+
+#design-archives {
+    padding: 10px 3em;
+}
+
+#zen-resources {
+    padding: 10px 3em;
+}
+
+@media screen and (max-width: 992px) {
+
+  h3 {
+    font-size: 24px;
+  }
+
+    #zen-supporting {
+        margin-top: 2em;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .explanation {
+        padding: 10px 3em;
+        max-width: 100%;
+        height: max-content;
+        order: 1;
+    }
+
+    .participation {
+        padding: 10px 3em;
+        max-width: 100%;
+        height: max-content;
+        order: 2;
+    }
+
+    .benefits {
+        padding: 10px 3em;
+        max-width: 100%;
+        height: max-content;
+        order: 4;
+    }
+
+    .requirements {
+        padding: 10px 3em;
+        max-width: 100%;
+        height: max-content;
+        order: 3;
+    }
+
+    footer {
+        background-color: #303030;
+        margin-top: 2em;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        order: 5;
+    }
+
+    footer a {
+      width: intrinsic;
+      width: -moz-available;
+      width: -webkit-fill-available;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        border-top: 3px solid red;
+        -moz-box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+        -webkit-box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+        box-shadow: 0px -3px 5px rgba(0, 0, 0,0.5);
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #zen-supporting {
+        margin-top: 2em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .explanation {
+        padding: 10px 1% 10px 4%;
+        max-width: 40%;
+        height: 27em;
+    }
+
+    .participation {
+        padding: 10px 4% 10px 1%;
+        max-width: 50%;
+        height: 27em;
+    }
+
+    .benefits {
+        padding: 10px 1% 10px 4%;
+        max-width: 40%;
+        height: 45em;
+    }
+
+    .requirements {
+        padding: 10px 4% 10px 1%;
+        max-width: 50%;
+        height: 45em;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #zen-supporting {
+        margin-top: 2em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .explanation {
+        padding: 10px 1% 10px 4%;
+        max-width: 30%;
+        height: 27em;
+    }
+
+    .participation {
+        padding: 10px 4% 10px 1%;
+        max-width: 60%;
+        height: 27em;
+    }
+
+    .benefits {
+        padding: 10px 1% 10px 4%;
+        max-width: 30%;
+        height: 33em;
+    }
+
+    .requirements {
+        padding: 10px 4% 10px 1%;
+        max-width: 60%;
+        height: 33em;
+    }
+
+}
